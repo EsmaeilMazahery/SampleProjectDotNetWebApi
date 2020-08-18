@@ -1,7 +1,0 @@
-C:\Projects\SampleProject\SP.Infrastructure\bin\Debug\netcoreapp3.0\SP.Infrastructure.deps.json
-C:\Projects\SampleProject\SP.Infrastructure\bin\Debug\netcoreapp3.0\SP.Infrastructure.dll
-C:\Projects\SampleProject\SP.Infrastructure\bin\Debug\netcoreapp3.0\SP.Infrastructure.pdb
-C:\Projects\SampleProject\SP.Infrastructure\obj\Debug\netcoreapp3.0\SP.Infrastructure.AssemblyInfoInputs.cache
-C:\Projects\SampleProject\SP.Infrastructure\obj\Debug\netcoreapp3.0\SP.Infrastructure.AssemblyInfo.cs
-C:\Projects\SampleProject\SP.Infrastructure\obj\Debug\netcoreapp3.0\SP.Infrastructure.dll
-C:\Projects\SampleProject\SP.Infrastructure\obj\Debug\netcoreapp3.0\SP.Infrastructure.pdb

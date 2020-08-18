@@ -1,1 +1,0 @@
-C:\Projects\SampleProject\SP.WebApiUser\obj\Debug\netcoreapp3.0\SP.WebApiUser.csprojAssemblyReference.cache

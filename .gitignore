@@ -1,30 +1,26 @@
-EP.AppAdminNG/Source/AppAdminNG/node_modules/
-EP.AppClientNG/Source/AppClientNG/node_modules/
-EP.AppUserNG/Source/AppUserN/node_modules/
+SP.DomainLayer/bin/
+SP.DomainLayer/obj/
 
-EP.DomainLayer/bin/
-EP.DomainLayer/obj/
+SP.FileServer/bin/
+SP.FileServer/obj/
+SP.FileServer/wwwroot/Files/
 
-EP.FileServer/bin/
-EP.FileServer/obj/
-EP.FileServer/wwwroot/Files/
+SP.DataLayer/bin/
+SP.DataLayer/obj/
 
-EP.DataLayer/bin/
-EP.DataLayer/obj/
+SP.Infrastructure/bin/
+SP.Infrastructure/obj/
 
-EP.Infrastructure/bin/
-EP.Infrastructure/obj/
+SP.ServiceLayer/bin/
+SP.ServiceLayer/obj/
 
-EP.ServiceLayer/bin/
-EP.ServiceLayer/obj/
+SP.Scheduler/bin/
+SP.Scheduler/obj/
 
-EP.Scheduler/bin/
-EP.Scheduler/obj/
+SP.WebApiAdmin/bin/
+SP.WebApiAdmin/obj/
 
-EP.WebApiAdmin/bin/
-EP.WebApiAdmin/obj/
-
-EP.WebApiUser/bin/
-EP.WebApiUser/obj/
+SP.WebApiUser/bin/
+SP.WebApiUser/obj/
 
 .vs/
