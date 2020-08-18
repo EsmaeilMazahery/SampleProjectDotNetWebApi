@@ -1,0 +1,35 @@
+﻿
+
+
+dotnet new sln -n ElectronTest
+dotnet new webapi --name SP.FileServer
+dotnet sln add src/ElectronTest/ElectronTest.csproj
+
+
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite --version 2.2.0
+
+dotnet run
+dotnet clean
+dotnet ef migrations add Location --startup-project ..\SP.WebApi\SP.WebApi.csproj
+dotnet publish -c Release
+
+
+
+
+omidAdmin:
+shadlyco@gmail.com
+Sh@13921219
+
+https://seller.digikala.com
+این پنل اصلی
+
+https://dkms.digikala.com/users/login/?_back=https://dkms.digikala.com/
+اینم پنل پروموشن dkms
+
+https://selleracademy.digikala.com
+اینم مرکز آموزش دیجی کالا
+
+ooffershop.ir/wp-admin/
+shirazadmin
+Omid@1366
+
