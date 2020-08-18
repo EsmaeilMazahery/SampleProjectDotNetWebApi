@@ -1,0 +1,3 @@
+C:\Projects\SampleProject\SP.ServiceLayer\obj\Debug\netcoreapp3.0\SP.ServiceLayer.csprojAssemblyReference.cache
+C:\Projects\SampleProject\SP.ServiceLayer\obj\Debug\netcoreapp3.0\SP.ServiceLayer.AssemblyInfoInputs.cache
+C:\Projects\SampleProject\SP.ServiceLayer\obj\Debug\netcoreapp3.0\SP.ServiceLayer.AssemblyInfo.cs

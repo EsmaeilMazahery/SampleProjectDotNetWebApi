@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SP.DataLayer\SP.DataLayer.csproj" />
+    <ProjectReference Include="..\SP.DomainLayer\SP.DomainLayer.csproj" />
+    <ProjectReference Include="..\SP.Infrastructure\SP.Infrastructure.csproj" />
+    <ProjectReference Include="..\SP.ServiceLayer\SP.ServiceLayer.csproj" />
+  </ItemGroup>
+
+</Project>

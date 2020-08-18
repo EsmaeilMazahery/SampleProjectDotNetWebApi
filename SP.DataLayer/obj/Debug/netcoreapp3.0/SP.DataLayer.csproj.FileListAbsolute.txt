@@ -1,0 +1,15 @@
+C:\Projects\SampleProject\SP.DataLayer\bin\Debug\netcoreapp3.0\SP.DataLayer.deps.json
+C:\Projects\SampleProject\SP.DataLayer\bin\Debug\netcoreapp3.0\SP.DataLayer.runtimeconfig.json
+C:\Projects\SampleProject\SP.DataLayer\bin\Debug\netcoreapp3.0\SP.DataLayer.runtimeconfig.dev.json
+C:\Projects\SampleProject\SP.DataLayer\bin\Debug\netcoreapp3.0\SP.DataLayer.dll
+C:\Projects\SampleProject\SP.DataLayer\bin\Debug\netcoreapp3.0\SP.DataLayer.pdb
+C:\Projects\SampleProject\SP.DataLayer\bin\Debug\netcoreapp3.0\SP.DomainLayer.dll
+C:\Projects\SampleProject\SP.DataLayer\bin\Debug\netcoreapp3.0\SP.Infrastructure.dll
+C:\Projects\SampleProject\SP.DataLayer\bin\Debug\netcoreapp3.0\SP.DomainLayer.pdb
+C:\Projects\SampleProject\SP.DataLayer\bin\Debug\netcoreapp3.0\SP.Infrastructure.pdb
+C:\Projects\SampleProject\SP.DataLayer\obj\Debug\netcoreapp3.0\SP.DataLayer.csprojAssemblyReference.cache
+C:\Projects\SampleProject\SP.DataLayer\obj\Debug\netcoreapp3.0\SP.DataLayer.AssemblyInfoInputs.cache
+C:\Projects\SampleProject\SP.DataLayer\obj\Debug\netcoreapp3.0\SP.DataLayer.AssemblyInfo.cs
+C:\Projects\SampleProject\SP.DataLayer\obj\Debug\netcoreapp3.0\SP.DataLayer.csproj.CopyComplete
+C:\Projects\SampleProject\SP.DataLayer\obj\Debug\netcoreapp3.0\SP.DataLayer.dll
+C:\Projects\SampleProject\SP.DataLayer\obj\Debug\netcoreapp3.0\SP.DataLayer.pdb

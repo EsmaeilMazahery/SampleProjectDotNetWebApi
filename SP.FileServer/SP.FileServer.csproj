@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SP.DataLayer\SP.DataLayer.csproj" />
+    <ProjectReference Include="..\SP.DomainLayer\SP.DomainLayer.csproj" />
+    <ProjectReference Include="..\SP.Infrastructure\SP.Infrastructure.csproj" />
+    <ProjectReference Include="..\SP.ServiceLayer\SP.ServiceLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Files\Galery\60dbecb4-b8ff-4a2f-a884-a24241e81416.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\Galery\cb6cee0d-3c16-4681-9997-9003c023ada3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
