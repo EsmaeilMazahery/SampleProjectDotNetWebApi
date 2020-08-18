@@ -19,10 +19,6 @@ namespace SP.DataLayer.Mappings
             builder.HasOne(s => s.member)
             .WithMany(u => u.services)
             .HasForeignKey(f => f.memberId);
-
-            builder.HasMany(m => m.cataloges)
-               .WithOne(o => o.serviceCataloge)
-               .HasForeignKey(f => f.serviceCatalogeId);
         }
     }
 }

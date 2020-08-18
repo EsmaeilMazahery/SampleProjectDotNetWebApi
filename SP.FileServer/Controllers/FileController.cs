@@ -1,4 +1,4 @@
-﻿using EP.FileServer.ViewModels;
+﻿using SP.FileServer.ViewModels;
 using SP.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;

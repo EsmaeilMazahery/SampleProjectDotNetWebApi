@@ -32,27 +32,10 @@ namespace SP.Scheduler.Services
         {
             try
             {
-                var propertise = _propertiseRepository.Value.AsQueryable().Where(w => w.propertiseKey == Infrastructure.Enumerations.PropertiseKey.LastCheckProfileScore).FirstOrDefault();
+               
 
-                var newUsers = _userRepository.Value.AsQueryable()
-                    .Where(w => w.lastUpdate > DateTime.Parse(propertise.value))
-                    .Select(u => new
-                    {
-                        u.userId,
-                        score = u.services.Sum(s => s.prices.Sum(p => p.medias.Count > 0 ? 1.5 : 1)) +
-                         u.services.Sum(s => s.samples.Sum(sp => sp.medias.Count > 0 ? 2 : 1)) +
-                         u.services.Sum(s => s.socials.Count) > 0 ? 1 : 0 +
-                         u.services.Sum(s => s.portfolios.Count) > 0 ? 1 : 0 +
-                         u.services.Sum(s => s.cataloges.Count) > 0 ? 1 : 0 +
-                         u.services.Sum(s => s.website != "" ? 1 : 0) > 0 ? 1 : 0 +
-                         u.services.Sum(s => s.description != "" ? 1 : 0) > 0 ? 1 : 0
-                    }).ToListStep(100);
+                //do some thing
 
-
-                foreach (var user in newUsers)
-                {
-                    _userRepository.Value.Update(w => w.userId == user.userId, u => new User() { searchScore = user.score });
-                }
             }
             catch (Exception ex)
             {

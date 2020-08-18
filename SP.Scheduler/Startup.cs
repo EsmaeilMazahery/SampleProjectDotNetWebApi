@@ -83,62 +83,7 @@ namespace SP.Scheduler
             services.AddScoped<ISchedulerRequestScopedProcessingService, SchedulerRequestScopedProcessingService>();
 
             services.AddScoped<ISearchRobotServiceScopedProcessingService, SearchRobotServiceScopedProcessingService>();
-            services.AddScoped<ISearchRobotSampleScopedProcessingService, SearchRobotSampleScopedProcessingService>();
-            services.AddScoped<ISearchRobotPriceScopedProcessingService, SearchRobotPriceScopedProcessingService>();
 
-
-
-            //services.AddScoped<IUnitOfWork, DatabaseContext>(provider => new DatabaseContext(provider.GetService<DbContextOptions<DatabaseContext>>()));
-            //services.AddTransient(typeof(Lazy<>), typeof(Lazier<>));
-            //services.AddTransient<IAreaRepository, AreaRepository>();
-            //services.AddTransient<IAdminRepository, AdminRepository>();
-            //services.AddTransient<IBookmarkRepository, BookmarkRepository>();
-            //services.AddTransient<ICallRepository, CallRepository>();
-            //services.AddTransient<IBusinessRepository, BusinessRepository>();
-            //services.AddTransient<IContactRepository, ContactRepository>();
-            //services.AddTransient<IInfoVerifyRepository, InfoVerifyRepository>();
-            //services.AddTransient<ILocationRepository, LocationRepository>();
-            //services.AddTransient<IMediaRepository, MediaRepository>();
-            //services.AddTransient<IPriceRepository, PriceRepository>();
-            //services.AddTransient<IPriceGroupRepository, PriceGroupRepository>();
-            //services.AddTransient<IProjectRepository, ProjectRepository>();
-            //services.AddTransient<IRoleRepository, RoleRepository>();
-            //services.AddTransient<ISampleRepository, SampleRepository>();
-            //services.AddTransient<ISampleGroupRepository, SampleGroupRepository>();
-            //services.AddTransient<IServiceRepository, ServiceRepository>();
-            //services.AddTransient<ISettingRepository, SettingRepository>();
-            //services.AddTransient<ISiteRepository, SiteRepository>();
-            //services.AddTransient<ISmsRepository, SmsRepository>();
-            //services.AddTransient<IUserRepository, UserRepository>();
-            //services.AddTransient<IUserVisitRepository, UserVisitRepository>();
-            //services.AddTransient<IMemberVisitRepository, MemberVisitRepository>();
-            //services.AddTransient<IRep_DailyChartRepository, Rep_DailyChartRepository>();
-
-            //services.AddTransient<ILogUserRepository, LogUserRepository>();
-            //services.AddTransient<IKeywordRepository, KeywordRepository>();
-            //services.AddTransient<IKeywordServiceRepository, KeywordServiceRepository>();
-            //services.AddTransient<IKeywordSampleRepository, KeywordSampleRepository>();
-            //services.AddTransient<IKeywordPriceRepository, KeywordPriceRepository>();
-            //services.AddTransient<IKeywordCordinateRepository, KeywordCordinateRepository>();
-            //services.AddTransient<IKeywordLoactionRepository, KeywordLoactionRepository>();
-            //services.AddTransient<IKeywordExceptionRepository, KeywordExceptionRepository>();
-            //services.AddTransient<IKeywordTranslateRepository, KeywordTranslateRepository>();
-            //services.AddTransient<ICommentRepository, CommentRepository>();
-            //services.AddTransient<ILikeRepository, LikeRepository>();
-            //services.AddTransient<ISiteRepository, SiteRepository>();
-            //services.AddTransient<ISiteRepository, SiteRepository>();
-
-            //var container = new Container();
-
-            //container.Configure(config =>
-            //{
-            //    config.AddRegistry(new DefaultRegistry());
-
-            //    //Populate the container using the service collection
-            //    config.Populate(services);
-            //});
-
-            //return container.GetInstance<IServiceProvider>();
         }
     }
 }

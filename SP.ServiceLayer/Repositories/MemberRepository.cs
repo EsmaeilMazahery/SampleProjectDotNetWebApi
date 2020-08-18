@@ -77,7 +77,7 @@ namespace SP.ServiceLayer.Services
                     try
                     {
                         // update record
-                        Update(f => f.userId  == userId, u => new Member { verifyMobile = true });
+                        Update(f => f.memberId  == userId, u => new Member { verifyMobile = true });
 
                         // save
                         _uow.Save();
@@ -105,7 +105,7 @@ namespace SP.ServiceLayer.Services
                     try
                     {
                         // update record
-                        Update(f => f.userId == userId, u => new Member { verifyEmail = true });
+                        Update(f => f.memberId == userId, u => new Member { verifyEmail = true });
 
                         // save
                         _uow.Save();
@@ -134,7 +134,7 @@ namespace SP.ServiceLayer.Services
                     try
                     {
                         // update record
-                        Update(f => f.userId == userId, u => new Member { enable = Enable });
+                        Update(f => f.memberId == userId, u => new Member { enable = Enable });
 
                         // save
                         _uow.Save();
@@ -165,7 +165,7 @@ namespace SP.ServiceLayer.Services
 
         public Member Read(int userId)
         {
-            return _users.Value.Where(w=>w.userId==userId).FirstOrDefault();
+            return _users.Value.Where(w=>w.memberId == userId).FirstOrDefault();
         }
 
          public void changeImage(int userId, string imageAddress)
@@ -177,7 +177,7 @@ namespace SP.ServiceLayer.Services
                     try
                     {
                         // update record
-                        Update(f => f.userId == userId, u => new Member { image = imageAddress });
+                        Update(f => f.memberId == userId, u => new Member { image = imageAddress });
 
                         // save
                         _uow.Save();

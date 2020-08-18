@@ -15,10 +15,8 @@ namespace SP.Scheduler.Services
         private AppSettings AppSettings { get; set; }
 
         public IUnitOfWork _uow;
-        public Lazy<IUserRepository> _userRepository;
+        public Lazy<IMemberRepository> _memberRepository;
         public Lazy<IServiceRepository> _serviceRepository;
-        public Lazy<ISampleRepository> _sampleRepository;
-        public Lazy<IPriceRepository> _priceRepository;
         public Lazy<IPropertiseRepository> _propertiseRepository;
         public Lazy<ISettingRepository> _settingRepository;
 
@@ -28,10 +26,8 @@ namespace SP.Scheduler.Services
 
             _uow = new DatabaseContext(Builder);
             _serviceRepository = new Lazy<IServiceRepository>(() => new ServiceRepository(_uow));
-            _sampleRepository = new Lazy<ISampleRepository>(() => new SampleRepository(_uow));
-            _priceRepository = new Lazy<IPriceRepository>(() => new PriceRepository(_uow));
             _propertiseRepository = new Lazy<IPropertiseRepository>(() => new PropertiseRepository(_uow));
-            _userRepository = new Lazy<IUserRepository>(() => new MemberRepository(_uow));
+            _memberRepository = new Lazy<IMemberRepository>(() => new MemberRepository(_uow));
             _settingRepository = new Lazy<ISettingRepository>(() => new SettingRepository(_uow));
         }
     }

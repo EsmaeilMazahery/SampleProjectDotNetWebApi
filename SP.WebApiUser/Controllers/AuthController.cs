@@ -75,8 +75,6 @@ namespace SP.WebApiMember.Controllers
                     signingCredentials: signinCredentials
                 );
 
-                _logUserRepository.Value.AddLog(member.memberId, LogUserType.Login);
-
                 var tokenString = new JwtSecurityTokenHandler().WriteToken(tokeOptions);
                 return Ok(new
                 {

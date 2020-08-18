@@ -15,4 +15,8 @@
     <ProjectReference Include="..\SP.ServiceLayer\SP.ServiceLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
 </Project>

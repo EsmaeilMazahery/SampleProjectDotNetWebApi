@@ -38,16 +38,6 @@ namespace SP.Scheduler.Services
                     Task.Run(() => SearchRobotService(), cancellationToken);
                 }
 
-                if (AppSettings.ActiveSearchRobotSample)
-                {
-                    Task.Run(() => SearchRobotSample(), cancellationToken);
-                }
-
-                if (AppSettings.ActiveSearchRobotPrice)
-                {
-                    Task.Run(() => SearchRobotPrice(), cancellationToken);
-                }
-
             }, cancellationToken);
         }
 
@@ -74,38 +64,6 @@ namespace SP.Scheduler.Services
                 var scopedProcessingService =
                     scope.ServiceProvider
                         .GetRequiredService<ISearchRobotServiceScopedProcessingService>();
-
-                while (true)
-                {
-                    scopedProcessingService.DoWork();
-                    Thread.Sleep(new TimeSpan(0, 1, 0));
-                }
-            }
-        }
-
-        private void SearchRobotSample()
-        {
-            using (var scope = Services.CreateScope())
-            {
-                var scopedProcessingService =
-                    scope.ServiceProvider
-                        .GetRequiredService<ISearchRobotSampleScopedProcessingService>();
-
-                while (true)
-                {
-                    scopedProcessingService.DoWork();
-                    Thread.Sleep(new TimeSpan(0, 1, 0));
-                }
-            }
-        }
-
-        private void SearchRobotPrice()
-        {
-            using (var scope = Services.CreateScope())
-            {
-                var scopedProcessingService =
-                    scope.ServiceProvider
-                        .GetRequiredService<ISearchRobotPriceScopedProcessingService>();
 
                 while (true)
                 {

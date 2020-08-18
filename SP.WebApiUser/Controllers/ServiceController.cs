@@ -153,41 +153,6 @@ namespace SP.WebApiMember.Controllers
             }
         }
 
-        [HttpGet, Authorize, Route("regComplate/{serviceId}")]
-        public IActionResult regComplate(int serviceId)
-        {
-            try
-            {
-                if (ModelState.IsValid)
-                {
-                    _serviceRepository.Value.RegComplate(serviceId);
-                    _uow.Save();
-
-                    return Ok();
-                }
-                else
-                {
-                    return BadRequest("err");
-                }
-            }
-            catch (Exception ex)
-            {
-                try
-                {
-                    if (ex.InnerException.Message.Contains("Cannot insert duplicate key row in object 'dbo.Services' with unique index"))
-                    {
-
-                    }
-                }
-                catch (Exception ex1)
-                {
-                    return BadRequest(ex1.Message);
-                }
-
-                return BadRequest(ex.Message);
-            }
-        }
-
         [HttpGet, Authorize, Route("{serviceId}")]
         public IActionResult Get(int serviceId)
         {

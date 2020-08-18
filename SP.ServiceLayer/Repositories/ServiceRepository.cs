@@ -11,19 +11,11 @@ namespace SP.ServiceLayer.Services
 {
     public interface IServiceRepository : IGenericRepository<Service>
     {
-        /// <summary>
-        /// گرفتن لیست سرویس ها
-        /// </summary>
-        /// <param name="userId"></param>
-        /// <param name="count"></param>
-        /// <returns></returns>
         IQueryable<Service> Read(int userId, int? count);
 
         EditServiceViewModel Read(int serviceId);
 
         Service Register(RegisterServiceViewModel model);
-
-        void RegComplate(int serviceId);
 
         void Edit(EditServiceViewModel model);
         bool checkServiceNameNotTaken(int userId, string name, int? serviceId);
